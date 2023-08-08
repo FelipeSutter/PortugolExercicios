@@ -3,22 +3,26 @@
  */
 
 
-programa{
-	funcao inicio(){
-		inteiro idade, novoIdade = 100
+programa{
+	funcao inicio(){
+		inteiro idade, novoIdade = 0
 		cadeia nome, novoNome = "a"
-		para(inteiro i = 1; i <= 3; i++) {
+		para(inteiro i = 1; i <= 10; i++) {
 			escreva("Digite o seu nome: ")
 			leia(nome)
 			escreva("Digite a sua idade: ")
 			leia(idade)
 			limpa()
-			se(idade < novoIdade) {
+			se(novoIdade == 0) {
+				novoIdade = idade
+				novoNome = nome
+			}
+			senao se(idade < novoIdade) {
 				novoIdade = idade
 				novoNome = nome
 			}
 		}
-		escreva("A idade do mais novo eh ", novoIdade, " e o nome eh ", novoNome)
+		escreva("A idade do mais novo eh: ", novoIdade, "\ne o nome eh: ", novoNome)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -26,7 +30,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 324; 
+ * @POSICAO-CURSOR = 343; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

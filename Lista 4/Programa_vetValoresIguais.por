@@ -7,6 +7,7 @@
 programa{
 	funcao inicio(){
 		inteiro vet[10], aux = 0
+		inteiro igual
 		para(inteiro i = 0; i < 10; i++) {
 			escreva("Digite o numero ", i+1, ": ")
 			leia(vet[i])
@@ -15,10 +16,12 @@ programa{
 		para(inteiro i = 0; i < 10; i++) {
 			para(inteiro j = 0; j < 10; j++) {
 				se(vet[i] == vet[j]) {
-					aux++
-					escreva(vet[i], " ")
+					igual = vet[i]
+					escreva(igual)
+					//escreva(vet[i], " ")
 				}
 			}
+			//escreva(vet[i], " ")
 		}
 	}
 }
@@ -27,9 +30,9 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 469; 
+ * @POSICAO-CURSOR = 501; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {vet, 9, 10, 3}-{aux, 9, 19, 3}-{i, 10, 15, 1}-{i, 15, 15, 1}-{j, 16, 16, 1};
+ * @SIMBOLOS-INSPECIONADOS = {vet, 9, 10, 3}-{aux, 9, 19, 3}-{i, 11, 15, 1}-{i, 16, 15, 1}-{j, 17, 16, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

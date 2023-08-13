@@ -21,6 +21,10 @@ programa{
 				novoIdade = idade
 				novoNome = nome
 			}
+			senao se(idade < 0) {
+				novoIdade = 0
+				novoNome = nome
+			}
 		}
 		escreva("A idade do mais novo eh: ", novoIdade, "\ne o nome eh: ", novoNome)
 	}
@@ -30,7 +34,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 343; 
+ * @POSICAO-CURSOR = 445; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
